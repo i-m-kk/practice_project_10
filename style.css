@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --p500: #281154;
+  --p300: #270082;
+  --p600: #1b0058;
+  --r600: #dc0000;
+  --bdy: #f9f6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  /* font-family: 'Roboto', sans-serif; */
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin: 50px;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+/* head */
+header {
+  background-color: var(--p300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+ul {
+  list-style: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-block: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* middle */
+.heroSection {
+  background-image: url(hero_image.png);
+  color: white;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.heroSection .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.heroSection h1 {
+  font-size: 96px;
+}
+.heroSection h3 {
+  font-size: 32px;
+}
+.musicSection {
+  padding-top: 50px;
+  background-color: var(--p500);
+}
+.musicSection .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.musicSecBtn {
+  background-color: var(--r600);
+  color: white;
+}
+.iPadIPhoneImg {
+  position: relative;
+  top: 400px;
+  margin-top: -400px;
+}
+.abtMusic {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.secondaryBtn {
+  background-color: var(--p300);
+  color: white;
+}
+.vdoSec {
+  background-image: url(video.png);
+  color: white;
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.vdoSec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+.heroSection,
+.vdoSec {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.giftSection {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 50px;
+  /* margin: 100px 0; */
+  margin-block: 100px;
+}
+.giftContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* foot */
+.footUp {
+  background-color: var(--p500);
+  padding: 20px;
+}
+.footUp .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.footUp h4 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footLow {
+  background-color: var(--p300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: var(--bdy);
+}
+.giftSection {
+  scroll-margin: 100px;
+}
